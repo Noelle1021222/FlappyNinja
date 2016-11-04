@@ -1,0 +1,6 @@
+framework module Pods_FlappyNinja {
+  umbrella header "Pods-FlappyNinja-umbrella.h"
+
+  export *
+  module * { export * }
+}

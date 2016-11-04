@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="pA3-iL-BcZ">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="vW7-S6-ulQ">
+            <objects>
+                <viewController storyboardIdentifier="FBLoginViewController" id="pA3-iL-BcZ" customClass="FBLoginViewController" customModule="FlappyNinja" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="K1q-YB-9Wg"/>
+                        <viewControllerLayoutGuide type="bottom" id="wdW-1W-G4x"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="DuP-i5-op3">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kYc-KQ-3aN" customClass="FBSDKLoginButton">
+                                <rect key="frame" x="180" y="368" width="240" height="128"/>
+                                <color key="backgroundColor" red="0.158682872" green="0.29635407650000001" blue="0.97810904249999997" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="kYc-KQ-3aN" firstAttribute="top" secondItem="K1q-YB-9Wg" secondAttribute="bottom" constant="348" id="1Bu-VK-ZOT"/>
+                            <constraint firstItem="wdW-1W-G4x" firstAttribute="top" secondItem="kYc-KQ-3aN" secondAttribute="bottom" constant="104" id="IPU-nY-S43"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="kYc-KQ-3aN" secondAttribute="trailing" constant="160" id="JEU-9b-G5y"/>
+                            <constraint firstItem="kYc-KQ-3aN" firstAttribute="leading" secondItem="DuP-i5-op3" secondAttribute="leadingMargin" constant="160" id="cvM-sw-MTa"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="loginButtonTwo" destination="kYc-KQ-3aN" id="Box-7O-55F"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JWq-E8-ZWW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-433" y="-255"/>
+        </scene>
+        <!--Game View Controller-->
+        <scene sceneID="tXr-a1-R10">
+            <objects>
+                <viewController storyboardIdentifier="GameViewController" id="BV1-FR-VrT" customClass="GameViewController" customModule="FlappyNinja" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8aa-yV-Osq"/>
+                        <viewControllerLayoutGuide type="bottom" id="qHh-Mt-9TT"/>
+                    </layoutGuides>
+                    <view key="view" multipleTouchEnabled="YES" contentMode="scaleToFill" id="3se-qz-xqx" customClass="SKView">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="316" y="-516"/>
+        </scene>
+    </scenes>
+</document>
